@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #39ff14 #1a1a1a;
+  }
+
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: #39ff14;
+    border-radius: 4px;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: #00ffff;
+  }
+
+  body {
+    background: #0a0a0a;
+    font-family: 'JetBrains Mono', monospace;
+    overflow-x: hidden;
+  }
+
+  .matrix-bg {
+    background-image: 
+      linear-gradient(90deg, transparent 95%, rgba(57, 255, 20, 0.1) 95%),
+      linear-gradient(0deg, transparent 95%, rgba(57, 255, 20, 0.1) 95%);
+    background-size: 20px 20px;
+  }
+
+  .glass {
+    background: rgba(26, 26, 26, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(57, 255, 20, 0.2);
+  }
+
+  .neon-border {
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 10px currentColor;
+  }
+
+  .selection::-moz-selection {
+    background: rgba(57, 255, 20, 0.3);
+  }
+
+  .selection::selection {
+    background: rgba(57, 255, 20, 0.3);
+  }
+
+  /* Responsive text sizes */
+  @media (max-width: 640px) {
+    .glass {
+      backdrop-filter: blur(8px);
+    }
+  }
+
+  /* Ensure proper spacing on mobile */
+  @media (max-width: 768px) {
+    .min-h-screen {
+      min-height: 100vh;
+      min-height: 100dvh; /* Dynamic viewport height for mobile */
+    }
+  }
+
+  /* Improve touch targets on mobile */
+  @media (max-width: 768px) {
+    button, a {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+}
