@@ -91,6 +91,12 @@ const ExperienceTimeline: React.FC = () => {
                       <Calendar className="w-3 h-3 sm:w-4 sm:h-4" />
                       {exp.duration}
                     </div>
+                    {exp.location && (
+                      <div className="flex items-center gap-2 text-gray-400 text-sm font-mono">
+                        <Building className="w-3 h-3 sm:w-4 sm:h-4" />
+                        {exp.location}
+                      </div>
+                    )}
                   </div>
 
                   <motion.button

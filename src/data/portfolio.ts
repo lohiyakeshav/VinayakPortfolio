@@ -59,12 +59,12 @@ export const projects: Project[] = [
     accessLevel: 1
   },
   {
-    id: 'automation-framework',
-    name: 'TestFramework.jar',
-    description: 'Scalable UI automation framework built with Selenium and Java for enhanced front-end testing and seamless user experience validation.',
-    tech: ['Java', 'Selenium', 'TestNG', 'Jenkins'],
-    status: 'classified',
-    accessLevel: 3
+    id: 'doctor-appointment',
+    name: 'Doctor Appointment Booking System',
+    description: 'Full-stack healthcare platform to streamline doctor-patient interactions, enabling appointment discovery, real-time booking, and role-based dashboards with instant booking reflection on doctor dashboard.',
+    tech: ['Java', 'Spring Boot', 'MySQL', 'Thymeleaf'],
+    status: 'public',
+    accessLevel: 1
   },
   {
     id: 'api-automation',
@@ -114,31 +114,46 @@ export const certificates: Certificate[] = [
 export const experience: Experience[] = [
   {
     id: 'ofbusiness',
-    company: 'OfBusiness/OFB Tech Pvt. Ltd.',
-    role: 'Software Development Engineer in Test',
+    company: 'OFBUSINESS',
+    role: 'Backend Automation Engineer',
     duration: 'October 2024 - Present',
+    location: 'Gurugram, India',
     description: [
-      'Developed and optimized backend systems by creating automated API scripts using Postman and JavaScript, improving system performance and reducing manual validation time by 30%',
-      'Built scalable UI automation frameworks with Selenium and Java, enhancing front-end functionality and ensuring seamless user experiences',
-      'Integrated automated tests into CI/CD pipelines, optimizing deployment efficiency and enabling faster release cycles',
-      'Collaborated with cross-functional teams to ensure quality delivery and maintain high testing standards'
+      'Designed and implemented scalable API test automation frameworks using Node.js, Newman, and Postman, accelerating release cycles and improving test coverage by 60%',
+      'Automated validation of complex RESTful APIs and backend logic, reducing critical bugs in production',
+      'Performed data validation across SQL, MongoDB, and Redis, enhancing backend reliability and ensuring end-to-end data integrity',
+      'Integrated API tests into CI/CD pipelines, enabling automated regression testing and reducing manual QA efforts by 50%',
+      'Created reusable test collections and scripts using Postman and executed them with Newman for continuous and scalable API testing'
     ],
-    tech: ['Java', 'JavaScript', 'Selenium', 'Postman', 'CI/CD', 'Jenkins'],
+    tech: ['Node.js', 'Postman', 'Newman', 'Git', 'SQL', 'MongoDB', 'Redis', 'REST APIs'],
     accessGranted: false
   },
   {
     id: 'infosys',
-    company: 'Infosys Mysore DC',
-    role: 'iOS App Developer Intern',
+    company: 'INFOSYS',
+    role: 'iOS Engineer Intern',
     duration: 'January 2024 - July 2024',
+    location: 'Mysore, India',
     description: [
-      'Led the development of Learnify, a Training & Learning Management App, featuring Admin, Educators, and Learner applications using SwiftUI',
-      'Integrated Firebase for real-time database management, authentication, and cloud storage solutions',
-      'Collaborated with cross-functional teams to design and refine app architecture, ensuring robustness and scalability',
-      'Managed tasks and workflows using Jira, ensuring timely delivery and effective team coordination',
-      'Selected among top 100 students for the prestigious Apple-Infosys iOS Development Program'
+      'Led end-to-end development of the Learnify Learners App, a training and learning management system with separate interfaces for learners, teachers, and admins, supporting 200+ users',
+      'Built a secure authentication flow with role-based routing — learners and teachers were redirected to their respective dashboards based on signup role selection',
+      'Implemented custom text-to-speech features to improve accessibility for specially-abled users',
+      'Integrated real-time backend services using Firebase and developed API connectivity using Node.js for authentication and data sync'
     ],
-    tech: ['Swift', 'SwiftUI', 'Firebase', 'Node.js', 'Jira'],
+    tech: ['SwiftUI', 'Node.js', 'Firebase'],
+    accessGranted: false
+  },
+  {
+    id: 'psr-metals',
+    company: 'PSR METALS PVT. LTD.',
+    role: 'Software Developer',
+    duration: 'June 2023 - August 2023',
+    location: 'Muzzafarnagar',
+    description: [
+      'Designed and deployed a responsive website for a product-based manufacturing company, boosting online presence and helping increase business inquiries by over 40%',
+      'Implemented basic SEO strategies and integrated an enquiry form using Formspree to improve customer engagement and lead conversion'
+    ],
+    tech: ['HTML', 'CSS', 'JavaScript', 'SEO', 'Formspree'],
     accessGranted: false
   }
 ];
