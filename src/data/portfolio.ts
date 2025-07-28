@@ -1,28 +1,42 @@
 import { Skill, Project, Certificate, Experience } from '../types';
 
 export const skills: Skill[] = [
+  // Backend Skills
   { name: 'Java', level: 90, category: 'backend' },
-  { name: 'JavaScript', level: 85, category: 'backend' },
-  { name: 'Swift', level: 90, category: 'mobile' },
-  { name: 'Python', level: 80, category: 'backend' },
-  { name: 'C++', level: 75, category: 'backend' },
-  { name: 'iOS Development', level: 90, category: 'mobile' },
-  { name: 'SwiftUI', level: 85, category: 'mobile' },
-  { name: 'Selenium', level: 90, category: 'testing' },
-  { name: 'Automation Testing', level: 90, category: 'testing' },
-  { name: 'Manual Testing', level: 85, category: 'testing' },
-  { name: 'API Testing', level: 85, category: 'testing' },
+  { name: 'Spring Boot', level: 85, category: 'backend' },
+  { name: 'MySQL', level: 80, category: 'backend' },
+  { name: 'PostgreSQL', level: 75, category: 'backend' },
+  { name: 'REST APIs', level: 90, category: 'backend' },
+  { name: 'Node.js', level: 70, category: 'backend' },
+  { name: 'Redis', level: 70, category: 'backend' },
+  
+  // Testing Skills
   { name: 'Postman', level: 90, category: 'testing' },
+  { name: 'API Testing', level: 90, category: 'testing' },
+  { name: 'Selenium', level: 85, category: 'testing' },
+  { name: 'Automation Testing', level: 80, category: 'testing' },
+  { name: 'Manual Testing', level: 80, category: 'testing' },
+  { name: 'Newman', level: 80, category: 'testing' },
+  
+  // Tools Skills
+  { name: 'Git/GitHub', level: 90, category: 'tools' },
   { name: 'Jenkins', level: 80, category: 'tools' },
   { name: 'Docker', level: 75, category: 'tools' },
-  { name: 'Firebase', level: 85, category: 'backend' },
-  { name: 'Node.js', level: 80, category: 'backend' },
-  { name: 'MongoDB', level: 75, category: 'backend' },
-  { name: 'Git/GitHub', level: 90, category: 'tools' },
-  { name: 'CI/CD', level: 80, category: 'tools' },
-  { name: 'Ethical Hacking', level: 75, category: 'security' },
-  { name: 'Penetration Testing', level: 70, category: 'security' },
-  { name: 'Kali Linux', level: 75, category: 'security' }
+  { name: 'CI/CD Pipelines', level: 80, category: 'tools' },
+  
+  // Security Skills
+  { name: 'Basic Cybersecurity', level: 70, category: 'security' },
+  { name: 'Data Validation', level: 75, category: 'security' },
+  { name: 'SQL Injection Prevention', level: 70, category: 'security' },
+  
+  // Web Technologies
+  { name: 'HTML/CSS/JavaScript', level: 70, category: 'frontend' },
+  { name: 'Thymeleaf', level: 65, category: 'frontend' },
+  
+  // Mobile Development (keeping existing)
+  { name: 'Swift', level: 90, category: 'mobile' },
+  { name: 'iOS Development', level: 90, category: 'mobile' },
+  { name: 'SwiftUI', level: 85, category: 'mobile' }
 ];
 
 export const projects: Project[] = [

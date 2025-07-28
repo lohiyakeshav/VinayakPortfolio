@@ -50,8 +50,14 @@ const TerminalHero: React.FC = () => {
             'Contact: vb.vinayakbansal@gmail.com | +91 6397053122',
             'LinkedIn: ehvinayakbansal',
             'GitHub: itsvinayakop',
-            'Current GPA: 8.9/10'
+            'Current GPA: 8.9/10',
+            'Opening resume in new tab...',
+            'Resume URL: https://drive.google.com/file/d/1TdGgdSp8K-Rt8DXIaO1THpk3iMEbnTpW/view?usp=drivesdk'
           ]);
+          // Automatically open the resume link
+          setTimeout(() => {
+            window.open('https://drive.google.com/file/d/1TdGgdSp8K-Rt8DXIaO1THpk3iMEbnTpW/view?usp=drivesdk', '_blank');
+          }, 1000);
           break;
         default:
           setCommandHistory(prev => [...prev, `Command '${cmd}' executed. Scroll down to access module.`]);
@@ -164,8 +170,23 @@ const TerminalHero: React.FC = () => {
             </div>
           </div>
 
+          {/* Resume Button */}
+          <div className="mt-6 pt-4 border-t border-hacker-green/20 flex justify-center">
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              href="https://drive.google.com/file/d/1TdGgdSp8K-Rt8DXIaO1THpk3iMEbnTpW/view?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-hacker-green/10 border-2 border-hacker-green text-hacker-green font-mono text-sm hover:bg-hacker-green hover:text-hacker-black transition-all duration-300 rounded-lg neon-border"
+            >
+              <FileText className="w-4 h-4" />
+              Resume
+            </motion.a>
+          </div>
+
           {/* Social Links */}
-          <div className="mt-6 pt-4 border-t border-hacker-green/20 flex gap-4 justify-center">
+          <div className="mt-4 flex gap-4 justify-center">
             <motion.a
               whileHover={{ scale: 1.1, rotate: 5 }}
               href="https://github.com/itsvinayakop"
